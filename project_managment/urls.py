@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_header = ('Projects Managment')
+admin.site.site_title = ('Projects Managment')
 
 urlpatterns = [
     path('__debug__/', include('debug_toolbar.urls')),
